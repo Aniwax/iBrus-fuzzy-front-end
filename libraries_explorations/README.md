@@ -20,4 +20,3 @@ https://doc.cgal.org/latest/Mesh_3/Mesh_3_2mesh_3D_image_8cpp-example.html
 
 4. Meshlab: https://www.meshlab.net/#references
 https://github.com/cnr-isti-vclab/PyMeshLab
-5.
