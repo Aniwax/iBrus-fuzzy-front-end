@@ -1,5 +1,6 @@
 """This script is generated for vedo efficiency test."""
 from vedo import *
+from vedo import Plotter
 import time
 # declare the instance of the class
 vp = Plotter(shape=(2, 2), interactive=0, axes=3)
@@ -13,7 +14,7 @@ box_1 = Cube(pos =[1, 0, 0], side = 1, c='b',alpha=1)
 
 
 # vp.show(Grid_1)
-# vp.show(Grid_1, box_1,__doc__, at=0)
+vp.show(s1, s2, box_1, at=0)
 
 
 
@@ -24,16 +25,16 @@ b1 = s1.boolean("intersect", s2).c('m').legend("intersect")
 end_time_intersect = time.time()
 process_time_intersect = end_time_intersect - start_time_intersect
 print(f"Boolean operations time for intersections is {process_time_intersect}")
-vp.show(b1, at=1, resetcam=False)
+vp.show(b1, at=1, resetcam=True)
 
 
 b2 = s1.boolean("plus", s2).c("b").wireframe(True).legend("plus")
-vp.show(b2, at=2, resetcam=False)
+vp.show(b2, at=2, resetcam=True)
 
 # b3 = s1.boolean("minus", s2).legend("minus").addScalarBar(c='w')
 # vp.show(b3, at=3, resetcam=False)
 b4 = b2.boolean("plus", box_1).c("g").wireframe(True).legend("plus")
-vp.show(b4, at=3, resetcam=False)
+vp.show(b4, at=3, resetcam=True)
 interactive()
 
 
