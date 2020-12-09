@@ -1,7 +1,6 @@
 # Here are necessary infos to install the package properly and run it
 
 ## Pymesh
-----------
 1. Doownload source code and record the repository of pymesh to the environment variable $PYMESH
 `git clone https://github.com/PyMesh/PyMesh.git
 cd PyMesh
@@ -24,11 +23,9 @@ It takes quite sometime to install all the system dependencies packages made in 
 
 
 ## Vedo
----
 `pip install vedo`
 
 ## fcl & python-fcl
-----
 1. Since python-fcl doesn't support fcl 0.6.0 yet, which is the newset version of fcl. You need to install the fcl version 0.5.0 from source code (https://github.com/flexible-collision-library/fcl/releases/tag/0.5.0)
 2. Make sure you installed all the required dependencies in https://github.com/BerkeleyAutomation/python-fcl and https://github.com/flexible-collision-library/fcl.
 
