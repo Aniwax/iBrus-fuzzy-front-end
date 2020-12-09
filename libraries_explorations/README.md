@@ -29,3 +29,8 @@ It takes quite sometime to install all the system dependencies packages made in 
 1. Since python-fcl doesn't support fcl 0.6.0 yet, which is the newset version of fcl. You need to install the fcl version 0.5.0 from source code (https://github.com/flexible-collision-library/fcl/releases/tag/0.5.0)
 2. Make sure you installed all the required dependencies in https://github.com/BerkeleyAutomation/python-fcl and https://github.com/flexible-collision-library/fcl.
 
+
+## trimesh
+1. `pip install trimesh`
+2. `pip install Rtree`, this is a soft dependencies neeeded.
+3. When you need the boolean engine, you need to install `blender` or `openscad` using your system package manager. 
