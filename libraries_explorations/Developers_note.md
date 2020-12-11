@@ -20,3 +20,19 @@ https://doc.cgal.org/latest/Mesh_3/Mesh_3_2mesh_3D_image_8cpp-example.html
 
 4. Meshlab: https://www.meshlab.net/#references
 https://github.com/cnr-isti-vclab/PyMeshLab
+
+
+
+## Dec. 10
+## To complete the library comparison, more test scenario should be done both in Trimesh and pymesh
+
+By far we explored mainly mesh to mesh intersection and both were very slow. 
+However, there are alternative ways to represents the grains and workpiece.
+
+1. Trimesh: do a test with a grain mesh intersecting with a plane representing workpiece.
+
+2. Trimesh: try representing the grain with point cloud and do a intersection with mesh plane. 
+
+3. Pymesh: try intersecting the grain with a polygon
+
+
