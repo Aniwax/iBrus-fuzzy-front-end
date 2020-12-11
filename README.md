@@ -6,7 +6,9 @@ This repository hosts all the code examples generated while exploring different 
 2. [Vedo](https://github.com/marcomusy/vedo)
 3. [Pymesh](https://github.com/PyMesh/PyMesh)
 
-
+## Boolean operations performance comparison
+![Trimesh_boolan operations runtime](Trimesh_grain_grid_runtime_scaling_bup.png)
+![Pymesh boolean operations runtime](pymesh_grain_grid_runtime_scaling.png)
 
 
 ## Notes, Tips, tricks and helpful links to check out for different packges
