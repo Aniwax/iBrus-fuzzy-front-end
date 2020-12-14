@@ -82,7 +82,7 @@ if __name__ == "__main__":
     # grain_mesh = pymesh.load_mesh("Cuboctahedron.stl")
     # runtime_list = for_loop_calculation(, distance,scale)
 
-    cProfile.run('for_loop_calculation(number, distance, scale, "grain")', "output.dat")
+    cProfile.run('for_loop_calculation(number, distance, scale, 5)', "output.dat")
 
     import pstats
     from pstats import SortKey

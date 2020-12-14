@@ -1,0 +1,414 @@
+Fri Dec 11 17:47:51 2020    output_trimesh.dat
+
+         206071 function calls (202464 primitive calls) in 58.674 seconds
+
+   Ordered by: internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        2   58.197   29.098   58.197   29.098 {built-in method posix.waitpid}
+      389    0.012    0.000    0.012    0.000 {built-in method io.open}
+     2052    0.012    0.000    0.013    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+      257    0.012    0.000    0.034    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/numeric.py:1421(cross)
+3991/2187    0.011    0.000    0.083    0.000 {built-in method numpy.core._multiarray_umath.implement_array_function}
+     2938    0.011    0.000    0.024    0.000 {built-in method builtins.sum}
+      131    0.010    0.000    0.010    0.000 {built-in method posix.remove}
+      132    0.010    0.000    0.010    0.000 {built-in method posix.open}
+     6663    0.010    0.000    0.010    0.000 {built-in method numpy.array}
+      255    0.009    0.000    0.207    0.001 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/base.py:51(__init__)
+      257    0.008    0.000    0.011    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/util.py:92(unitize)
+      127    0.008    0.000    0.072    0.001 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/grouping.py:23(merge_vertices)
+      254    0.007    0.000    0.032    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/base.py:1121(update_vertices)
+      771    0.007    0.000    0.017    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/numeric.py:1340(moveaxis)
+     3692    0.007    0.000    0.008    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/_collections_abc.py:657(get)
+      127    0.007    0.000    0.007    0.000 {method 'flush' of '_io.BufferedWriter' objects}
+ 1875/375    0.007    0.000    0.013    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/copy.py:132(deepcopy)
+      256    0.007    0.000    0.007    0.000 {method 'close' of '_io.BufferedWriter' objects}
+     6276    0.006    0.000    0.013    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/caching.py:661(<genexpr>)
+     1542    0.006    0.000    0.008    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/numeric.py:1277(normalize_axis_tuple)
+     3338    0.006    0.000    0.007    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/caching.py:205(_xxhash)
+      257    0.006    0.000    0.062    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/base.py:386(face_normals)
+     2035    0.006    0.000    0.013    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/base.py:278(faces)
+      640    0.006    0.000    0.008    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/posixpath.py:338(normpath)
+      635    0.005    0.000    0.005    0.000 {built-in method posix.stat}
+     4201    0.005    0.000    0.005    0.000 {built-in method numpy.empty}
+      257    0.005    0.000    0.006    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/lib/function_base.py:1141(diff)
+     1654    0.005    0.000    0.011    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/base.py:427(vertices)
+      127    0.005    0.000    0.010    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/exchange/stl.py:57(load_stl_binary)
+15130/15080    0.005    0.000    0.011    0.000 {built-in method builtins.hasattr}
+      889    0.005    0.000    0.006    0.000 {built-in method builtins.all}
+      127    0.005    0.000    0.035    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/base.py:2195(apply_transform)
+      127    0.004    0.000    0.100    0.001 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/exchange/export.py:19(export_mesh)
+     2938    0.004    0.000    0.029    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/caching.py:651(fast_hash)
+      126    0.004    0.000    0.004    0.000 {built-in method posix.getcwd}
+      772    0.004    0.000    0.007    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/util.py:283(is_shape)
+      127    0.004    0.000    0.026    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/exchange/load.py:471(parse_file_args)
+      127    0.004    0.000    0.026    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/base.py:1239(remove_infinite_values)
+     1923    0.004    0.000    0.010    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/util.py:249(is_sequence)
+      127    0.004    0.000    0.245    0.002 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/exchange/load.py:170(load_mesh)
+      640    0.004    0.000    0.019    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/posixpath.py:376(abspath)
+      254    0.004    0.000    0.016    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/resolvers.py:45(__init__)
+      127    0.003    0.000    0.007    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/grouping.py:146(hashable_rows)
+      127    0.003    0.000    0.010    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/transformations.py:2097(transform_points)
+      643    0.003    0.000    0.009    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/caching.py:589(__setitem__)
+      380    0.003    0.000    0.014    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/visual/color.py:42(__init__)
+      127    0.003    0.000    0.008    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/lib/arraysetops.py:298(_unique1d)
+      129    0.003    0.000    0.051    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/base.py:332(face_normals)
+     1412    0.003    0.000    0.020    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/caching.py:398(verify)
+  505/379    0.003    0.000    0.035    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/caching.py:82(get_cached)
+      375    0.003    0.000    0.011    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/copy.py:236(_deepcopy_dict)
+      255    0.003    0.000    0.003    0.000 {method 'read' of '_io.BufferedReader' objects}
+     2079    0.003    0.000    0.003    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/caching.py:136(__array_finalize__)
+      647    0.003    0.000    0.007    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/fromnumeric.py:73(_wrapreduction)
+      761    0.003    0.000    0.011    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/caching.py:559(is_empty)
+      890    0.003    0.000    0.012    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/caching.py:370(__init__)
+        2    0.003    0.001    0.003    0.001 {built-in method _posixsubprocess.fork_exec}
+      253    0.002    0.000    0.107    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/base.py:198(process)
+        2    0.002    0.001    0.002    0.001 {built-in method posix.read}
+      256    0.002    0.000    0.011    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/util.py:2169(allclose)
+      130    0.002    0.000    0.006    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/numeric.py:2244(within_tol)
+      507    0.002    0.000    0.010    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/visual/color.py:128(crc)
+     1056    0.002    0.000    0.004    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/random.py:256(choice)
+      127    0.002    0.000    0.057    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/exchange/stl.py:200(export_stl)
+      125    0.002    0.000    0.034    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/base.py:2735(copy)
+14123/13996    0.002    0.000    0.007    0.000 {built-in method builtins.len}
+     8354    0.002    0.000    0.002    0.000 {built-in method builtins.isinstance}
+      381    0.002    0.000    0.005    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/_dtype.py:333(_name_get)
+      130    0.002    0.000    0.013    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/numeric.py:2167(isclose)
+      125    0.002    0.000    0.002    0.000 {built-in method posix.chdir}
+     1277    0.002    0.000    0.002    0.000 {built-in method numpy.zeros}
+      512    0.002    0.000    0.003    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/lib/twodim_base.py:154(eye)
+      127    0.002    0.000    0.002    0.000 {method 'argsort' of 'numpy.ndarray' objects}
+      256    0.002    0.000    0.045    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/triangles.py:16(cross)
+      382    0.002    0.000    0.008    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/base.py:444(vertices)
+      256    0.002    0.000    0.009    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/base.py:294(faces)
+        2    0.002    0.001    0.132    0.066 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/interfaces/generic.py:28(__enter__)
+      132    0.002    0.000    0.006    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/tempfile.py:156(<listcomp>)
+      900    0.002    0.000    0.002    0.000 {method 'view' of 'numpy.ndarray' objects}
+      771    0.002    0.000    0.021    0.000 <__array_function__ internals>:2(moveaxis)
+      516    0.002    0.000    0.005    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/caching.py:33(tracked_array)
+      761    0.002    0.000    0.013    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/base.py:1560(is_empty)
+     3696    0.002    0.000    0.002    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/caching.py:586(__getitem__)
+      127    0.002    0.000    0.197    0.002 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/exchange/load.py:369(load_kwargs)
+      127    0.002    0.000    0.003    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/base.py:797(triangles)
+     1027    0.002    0.000    0.002    0.000 {method 'reshape' of 'numpy.ndarray' objects}
+      646    0.002    0.000    0.008    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/fromnumeric.py:2324(all)
+      127    0.002    0.000    0.007    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/base.py:1186(update_faces)
+      637    0.002    0.000    0.007    0.000 {method 'all' of 'numpy.ndarray' objects}
+      646    0.002    0.000    0.012    0.000 <__array_function__ internals>:2(all)
+      640    0.002    0.000    0.002    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/posixpath.py:64(isabs)
+      131    0.002    0.000    0.022    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/tempfile.py:247(_mkstemp_inner)
+      125    0.001    0.000    0.313    0.003 /Users/shirzart/Desktop/iBrus-fuzzy-front-end/libraries_explorations/trimesh_efficiency_test.py:22(grid_type_generation)
+      254    0.001    0.000    0.004    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/lib/shape_base.py:612(column_stack)
+      385    0.001    0.000    0.002    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/fromnumeric.py:1903(shape)
+      260    0.001    0.000    0.006    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/caching.py:473(__setitem__)
+      258    0.001    0.000    0.002    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/posixpath.py:75(join)
+     2960    0.001    0.000    0.005    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/_asarray.py:88(asanyarray)
+      127    0.001    0.000    0.001    0.000 {built-in method numpy.arange}
+      625    0.001    0.000    0.001    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/copy.py:252(_keep_alive)
+      764    0.001    0.000    0.001    0.000 {method 'format' of 'str' objects}
+      510    0.001    0.000    0.005    0.000 {method 'max' of 'numpy.ndarray' objects}
+      131    0.001    0.000    0.027    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/tempfile.py:520(NamedTemporaryFile)
+      127    0.001    0.000    0.036    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/parent.py:92(apply_translation)
+      637    0.001    0.000    0.008    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/base.py:263(crc)
+      254    0.001    0.000    0.002    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/posixpath.py:104(split)
+      640    0.001    0.000    0.002    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/logging/__init__.py:1356(debug)
+      127    0.001    0.000    0.247    0.002 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/constants.py:132(timed)
+     2570    0.001    0.000    0.001    0.000 {built-in method numpy.core._multiarray_umath.normalize_axis_index}
+     1056    0.001    0.000    0.002    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/random.py:224(_randbelow)
+      260    0.001    0.000    0.002    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/_ufunc_config.py:39(seterr)
+        2    0.001    0.001   58.205   29.103 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/subprocess.py:331(call)
+      130    0.001    0.000    0.003    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/_methods.py:228(_ptp)
+      256    0.001    0.000    0.035    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/triangles.py:61(normals)
+      127    0.001    0.000    0.005    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/parent.py:62(__repr__)
+     2540    0.001    0.000    0.001    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/util.py:268(<genexpr>)
+      256    0.001    0.000    0.001    0.000 {method 'close' of '_io.BufferedReader' objects}
+      391    0.001    0.000    0.003    0.000 <__array_function__ internals>:2(dot)
+      385    0.001    0.000    0.004    0.000 <__array_function__ internals>:2(shape)
+      127    0.001    0.000    0.009    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/lib/arraysetops.py:151(unique)
+     2686    0.001    0.000    0.001    0.000 {method 'startswith' of 'str' objects}
+      127    0.001    0.000    0.001    0.000 {method 'cumsum' of 'numpy.ndarray' objects}
+      250    0.001    0.000    0.001    0.000 {method '__deepcopy__' of 'numpy.ndarray' objects}
+      253    0.001    0.000    0.002    0.000 {method 'all' of 'numpy.generic' objects}
+     1542    0.001    0.000    0.001    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/numeric.py:1327(<listcomp>)
+      393    0.001    0.000    0.003    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/caching.py:453(__getitem__)
+      255    0.001    0.000    0.002    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/caching.py:434(update)
+      635    0.001    0.000    0.001    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/caching.py:518(__init__)
+      253    0.001    0.000    0.001    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/caching.py:424(clear)
+      127    0.001    0.000    0.006    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/visual/color.py:108(kind)
+      255    0.001    0.000    0.004    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/ray/ray_triangle.py:24(__init__)
+      127    0.001    0.000    0.101    0.001 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/base.py:2499(export)
+      260    0.001    0.000    0.001    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/_ufunc_config.py:139(geterr)
+      257    0.001    0.000    0.007    0.000 <__array_function__ internals>:2(diff)
+     5498    0.001    0.000    0.001    0.000 {method 'append' of 'list' objects}
+      896    0.001    0.000    0.001    0.000 {method 'split' of 'str' objects}
+      127    0.001    0.000    0.017    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/grouping.py:399(unique_rows)
+      257    0.001    0.000    0.036    0.000 <__array_function__ internals>:2(cross)
+      132    0.001    0.000    0.007    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/tempfile.py:153(__next__)
+     3573    0.001    0.000    0.001    0.000 {method 'values' of 'dict' objects}
+      381    0.001    0.000    0.004    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/caching.py:447(id_set)
+        2    0.001    0.000    0.027    0.014 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/interfaces/generic.py:33(<listcomp>)
+      381    0.001    0.000    0.002    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/_dtype.py:319(_name_includes_bit_suffix)
+      130    0.001    0.000    0.016    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/numeric.py:2091(allclose)
+      508    0.001    0.000    0.001    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/posixpath.py:232(expanduser)
+      127    0.001    0.000    0.001    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/util.py:843(decimal_to_digits)
+      255    0.001    0.000    0.011    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/visual/objects.py:15(create_visual)
+      254    0.001    0.000    0.006    0.000 <__array_function__ internals>:2(column_stack)
+      125    0.001    0.000    0.005    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/visual/color.py:146(copy)
+     1283    0.001    0.000    0.001    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/posixpath.py:41(_get_sep)
+      127    0.001    0.000    0.001    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/numerictypes.py:365(issubdtype)
+      773    0.001    0.000    0.001    0.000 {built-in method builtins.sorted}
+      131    0.001    0.000    0.002    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/tempfile.py:114(_sanitize_params)
+      771    0.001    0.000    0.001    0.000 {method 'transpose' of 'numpy.ndarray' objects}
+      254    0.001    0.000    0.001    0.000 {built-in method numpy.frombuffer}
+        1    0.001    0.001   57.540   57.540 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/boolean.py:29(union)
+     3073    0.001    0.000    0.001    0.000 {built-in method posix.fspath}
+      127    0.001    0.000    0.194    0.002 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/exchange/load.py:403(handle_mesh)
+        1    0.001    0.001    0.315    0.315 /Users/shirzart/Desktop/iBrus-fuzzy-front-end/libraries_explorations/trimesh_efficiency_test.py:33(getsetup)
+        2    0.001    0.000    0.007    0.003 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/subprocess.py:1412(_execute_child)
+      255    0.001    0.000    0.002    0.000 <__array_function__ internals>:2(concatenate)
+      254    0.001    0.000    0.001    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/lib/shape_base.py:608(_column_stack_dispatcher)
+      126    0.001    0.000    0.024    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/base.py:840(triangles_cross)
+      254    0.001    0.000    0.001    0.000 {method 'seek' of '_io.BufferedReader' objects}
+      131    0.001    0.000    0.001    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/tempfile.py:465(__init__)
+      127    0.001    0.000    0.072    0.001 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/base.py:1092(merge_vertices)
+      127    0.001    0.000    0.001    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/visual/color.py:467(_update_key)
+     3750    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+      771    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/numeric.py:1403(<listcomp>)
+      381    0.000    0.000    0.003    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/genericpath.py:27(isfile)
+      254    0.000    0.000    0.001    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/util.py:188(is_pathlib)
+      127    0.000    0.000    0.007    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/util.py:2010(write_encoded)
+      647    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/fromnumeric.py:74(<dictcomp>)
+      890    0.000    0.000    0.006    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/_methods.py:47(_all)
+        2    0.000    0.000   58.357   29.179 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/interfaces/blender.py:40(boolean)
+      381    0.000    0.000    0.000    0.000 {method 'tell' of '_io.BufferedReader' objects}
+      127    0.000    0.000    0.011    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/exchange/stl.py:23(load_stl)
+      254    0.000    0.000    0.000    0.000 {method 'astype' of 'numpy.ndarray' objects}
+      899    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+      127    0.000    0.000    0.001    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/grouping.py:202(float_to_int)
+      127    0.000    0.000    0.010    0.000 <__array_function__ internals>:2(unique)
+      130    0.000    0.000    0.003    0.000 {method 'ptp' of 'numpy.ndarray' objects}
+        2    0.000    0.000   58.213   29.107 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/interfaces/generic.py:69(run)
+      130    0.000    0.000    0.017    0.000 <__array_function__ internals>:2(allclose)
+      127    0.000    0.000    0.000    0.000 {method 'round' of 'numpy.ndarray' objects}
+      127    0.000    0.000    0.001    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/fromnumeric.py:2405(cumsum)
+     3250    0.000    0.000    0.000    0.000 {built-in method builtins.id}
+      254    0.000    0.000    0.003    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/genericpath.py:39(isdir)
+      640    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/logging/__init__.py:1614(isEnabledFor)
+      770    0.000    0.000    0.002    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/_asarray.py:141(ascontiguousarray)
+      130    0.000    0.000    0.002    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/_ufunc_config.py:441(__enter__)
+      915    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
+      127    0.000    0.000    0.001    0.000 <__array_function__ internals>:2(nonzero)
+        2    0.000    0.000    0.007    0.003 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/subprocess.py:681(__init__)
+     1277    0.000    0.000    0.000    0.000 {method 'intdigest' of 'xxhash.xxh64' objects}
+      767    0.000    0.000    0.001    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/_asarray.py:16(asarray)
+      127    0.000    0.000    0.002    0.000 <__array_function__ internals>:2(cumsum)
+      254    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/numerictypes.py:293(issubclass_)
+      765    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+      132    0.000    0.000    0.007    0.000 {built-in method builtins.next}
+      130    0.000    0.000    0.001    0.000 <__array_function__ internals>:2(result_type)
+      643    0.000    0.000    0.001    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/caching.py:527(mutable)
+      510    0.000    0.000    0.004    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/_methods.py:28(_amax)
+      130    0.000    0.000    0.001    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/_ufunc_config.py:446(__exit__)
+     1014    0.000    0.000    0.000    0.000 {built-in method builtins.issubclass}
+      127    0.000    0.000    0.001    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/visual/color.py:381(update_vertices)
+      127    0.000    0.000    0.003    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/caching.py:505(__exit__)
+      387    0.000    0.000    0.000    0.000 {built-in method builtins.abs}
+      129    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/posixpath.py:144(basename)
+      130    0.000    0.000    0.014    0.000 <__array_function__ internals>:2(isclose)
+     1786    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+      127    0.000    0.000    0.004    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/caching.py:498(__len__)
+        2    0.000    0.000    0.011    0.005 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/interfaces/generic.py:98(__exit__)
+        2    0.000    0.000    0.001    0.000 /Users/shirzart/.vscode/extensions/ms-python.python-2020.11.371526539/pythonFiles/lib/python/debugpy/_vendored/pydevd/pydevd.py:1736(send_process_created_message)
+      254    0.000    0.000    0.001    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/fromnumeric.py:55(_wrapfunc)
+     1807    0.000    0.000    0.000    0.000 {method 'getrandbits' of '_random.Random' objects}
+      131    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/tempfile.py:93(_infer_return_type)
+      380    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/base.py:1968(visual)
+        4    0.000    0.000   58.197   14.549 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/subprocess.py:1621(_wait)
+      127    0.000    0.000    0.006    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/visual/color.py:96(defined)
+      635    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/exchange/load.py:460(<genexpr>)
+      130    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/_ufunc_config.py:437(__init__)
+      127    0.000    0.000    0.001    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/fromnumeric.py:1804(nonzero)
+      127    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/util.py:1897(split_extension)
+      771    0.000    0.000    0.000    0.000 {method 'insert' of 'list' objects}
+        5    0.000    0.000    0.000    0.000 {built-in method posix.close}
+     1542    0.000    0.000    0.000    0.000 {built-in method _operator.index}
+      510    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/caching.py:611(__contains__)
+      379    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/base.py:1954(visual)
+      260    0.000    0.000    0.000    0.000 {built-in method numpy.seterrobj}
+      131    0.000    0.000    0.001    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/tempfile.py:503(close)
+      130    0.000    0.000    0.000    0.000 {method 'write' of '_io.BufferedWriter' objects}
+      381    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/_dtype.py:36(_kind_name)
+      383    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+      254    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/util.py:171(is_file)
+      131    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/tempfile.py:447(__del__)
+      127    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/exchange/load.py:457(<dictcomp>)
+      132    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/tempfile.py:142(rng)
+        1    0.000    0.000    0.000    0.000 {built-in method posix.unlink}
+      127    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/_internal.py:830(npy_ctypes_check)
+      381    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/util.py:207(is_string)
+      253    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/caching.py:431(<dictcomp>)
+     1250    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/copy.py:190(_deepcopy_atomic)
+      127    0.000    0.000    0.000    0.000 {method 'flatten' of 'numpy.ndarray' objects}
+      520    0.000    0.000    0.000    0.000 {built-in method numpy.geterrobj}
+      255    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/shape_base.py:209(_arrays_for_stack_dispatcher)
+      771    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/numeric.py:1336(_moveaxis_dispatcher)
+        1    0.000    0.000   58.674   58.674 /Users/shirzart/Desktop/iBrus-fuzzy-front-end/libraries_explorations/trimesh_efficiency_test.py:55(for_loop_trimesh)
+      257    0.000    0.000    0.000    0.000 {built-in method numpy.promote_types}
+        2    0.000    0.000    0.003    0.002 /Users/shirzart/.vscode/extensions/ms-python.python-2020.11.371526539/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydev_bundle/pydev_monkey.py:591(new_fork_exec)
+      262    0.000    0.000    0.001    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/tempfile.py:437(close)
+        1    0.000    0.000    0.001    0.001 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/tempfile.py:186(_get_default_tempdir)
+      127    0.000    0.000    0.000    0.000 {method 'nonzero' of 'numpy.ndarray' objects}
+      127    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/util.py:2252(decode_text)
+        2    0.000    0.000   58.205   29.103 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/subprocess.py:348(check_call)
+      646    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/fromnumeric.py:2320(_all_dispatcher)
+      127    0.000    0.000    0.005    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/visual/color.py:347(_verify_crc)
+      389    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
+        2    0.000    0.000    0.004    0.002 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/primitives.py:597(_create_mesh)
+     1056    0.000    0.000    0.000    0.000 {method 'bit_length' of 'int' objects}
+      254    0.000    0.000    0.000    0.000 {method 'rstrip' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.vscode/extensions/ms-python.python-2020.11.371526539/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_comm.py:326(add_command)
+      383    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}
+      129    0.000    0.000    0.000    0.000 {method 'decode' of 'bytes' objects}
+      254    0.000    0.000    0.000    0.000 {method 'tobytes' of 'numpy.ndarray' objects}
+      391    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/multiarray.py:707(dot)
+      255    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/permutate.py:128(__init__)
+      131    0.000    0.000    0.001    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/tempfile.py:287(gettempdir)
+      254    0.000    0.000    0.000    0.000 {built-in method time.perf_counter}
+      255    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/proximity.py:283(__init__)
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/interfaces/generic.py:50(<dictcomp>)
+      385    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/fromnumeric.py:1899(_shape_dispatcher)
+      381    0.000    0.000    0.000    0.000 {built-in method _stat.S_ISREG}
+      131    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/tempfile.py:422(__init__)
+      255    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/multiarray.py:145(concatenate)
+      254    0.000    0.000    0.000    0.000 {built-in method _stat.S_ISDIR}
+      127    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/lib/arraysetops.py:138(_unpack_tuple)
+        2    0.000    0.000    0.003    0.002 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/creation.py:565(box)
+      257    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/lib/function_base.py:1137(_diff_dispatcher)
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/queue.py:121(put)
+      257    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/numeric.py:1417(_cross_dispatcher)
+        1    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/transformations.py:2202(flips_winding)
+        1    0.000    0.000    0.819    0.819 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/boolean.py:10(difference)
+        1    0.000    0.000   58.674   58.674 <string>:1(<module>)
+      127    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/caching.py:502(__enter__)
+        4    0.000    0.000    0.000    0.000 {method 'sub' of 're.Pattern' objects}
+        5    0.000    0.000    0.003    0.001 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/primitives.py:44(faces)
+      130    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/primitives.py:499(__init__)
+        1    0.000    0.000   58.674   58.674 {built-in method builtins.exec}
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.vscode/extensions/ms-python.python-2020.11.371526539/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydev_bundle/pydev_monkey.py:240(patch_args)
+        2    0.000    0.000    0.001    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/resources/__init__.py:11(get)
+        7    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/primitives.py:178(__getattr__)
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/subprocess.py:875(__del__)
+        2    0.000    0.000   58.197   29.098 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/subprocess.py:1608(_try_wait)
+        3    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/primitives.py:111(apply_transform)
+      131    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/tempfile.py:233(_get_candidate_names)
+      126    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/base.py:482(vertex_normals)
+        1    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/primitives.py:142(__init__)
+      127    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/lib/arraysetops.py:146(_unique_dispatcher)
+      127    0.000    0.000    0.000    0.000 {method 'strip' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/random.py:88(__init__)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.print}
+        4    0.000    0.000   58.197   14.549 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/subprocess.py:1014(wait)
+        1    0.000    0.000    0.000    0.000 {method 'mean' of 'numpy.ndarray' objects}
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/tempfile.py:471(__getattr__)
+      132    0.000    0.000    0.000    0.000 {built-in method posix.getpid}
+        1    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/tempfile.py:159(_candidate_tempdir_list)
+      130    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/multiarray.py:635(result_type)
+      130    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/numeric.py:2163(_isclose_dispatcher)
+      127    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/fromnumeric.py:2401(_cumsum_dispatcher)
+        2    0.000    0.000    0.000    0.000 {function Random.seed at 0x108f3d830}
+      129    0.000    0.000    0.000    0.000 {method 'upper' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/_methods.py:134(_mean)
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.vscode/extensions/ms-python.python-2020.11.371526539/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydev_bundle/pydev_monkey.py:151(is_python)
+      127    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/fromnumeric.py:1800(_nonzero_dispatcher)
+        2    0.000    0.000    0.001    0.001 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/primitives.py:56(vertices)
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/threading.py:335(notify)
+      130    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/numeric.py:2087(_allclose_dispatcher)
+       10    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/util.py:1621(convert_like)
+        1    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/primitives.py:36(__init__)
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/interfaces/generic.py:53(<listcomp>)
+        4    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/string.py:107(substitute)
+        2    0.000    0.000    0.001    0.000 /Users/shirzart/.vscode/extensions/ms-python.python-2020.11.371526539/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydev_bundle/pydev_monkey.py:695(send_process_created_message)
+        1    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/parent.py:114(apply_scale)
+        1    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/transformations.py:2180(scale_and_translate)
+        7    0.000    0.000    0.000    0.000 {method 'encode' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/subprocess.py:847(__exit__)
+        1    0.000    0.000    0.000    0.000 <__array_function__ internals>:2(vstack)
+        3    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/os.py:674(__getitem__)
+        7    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/primitives.py:185(__setattr__)
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/functools.py:37(update_wrapper)
+        2    0.000    0.000    0.000    0.000 {built-in method posix.pipe}
+        4    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/platform.py:1061(system)
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/subprocess.py:1555(_handle_exitstatus)
+        1    0.000    0.000    0.000    0.000 <__array_function__ internals>:2(atleast_2d)
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/posixpath.py:154(dirname)
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/random.py:97(seed)
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/util.py:371(make_sequence)
+        4    0.000    0.000    0.000    0.000 {method 'release' of '_thread.lock' objects}
+        1    0.000    0.000    0.000    0.000 {method 'random' of 'numpy.random.mtrand.RandomState' objects}
+        6    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/string.py:121(convert)
+        1    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/shape_base.py:224(vstack)
+        3    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/os.py:770(getenv)
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/_bootlocale.py:33(getpreferredencoding)
+        2    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method _locale.nl_langinfo}
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/functools.py:67(wraps)
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/subprocess.py:1358(_get_handles)
+        4    0.000    0.000    0.000    0.000 /Users/shirzart/.vscode/extensions/ms-python.python-2020.11.371526539/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydev_bundle/pydev_monkey.py:123(_get_str_type_compatible)
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/interfaces/generic.py:15(__init__)
+        1    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/shape_base.py:83(atleast_2d)
+        4    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/string.py:90(__init__)
+        1    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/fromnumeric.py:2236(any)
+        1    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/caching.py:617(update)
+        1    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/primitives.py:70(face_normals)
+        3    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/os.py:752(encode)
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/queue.py:212(_put)
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/threading.py:240(__enter__)
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.vscode/extensions/ms-python.python-2020.11.371526539/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_constants.py:806(get_global_debugger)
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.vscode/extensions/ms-python.python-2020.11.371526539/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydev_bundle/pydev_monkey.py:36(_get_apply_arg_patching)
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/caching.py:494(__contains__)
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/os.py:804(fsencode)
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.vscode/extensions/ms-python.python-2020.11.371526539/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydev_bundle/pydev_monkey.py:164(remove_quotes_from_args)
+        1    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/numeric.py:159(ones)
+       10    0.000    0.000    0.000    0.000 {built-in method builtins.setattr}
+        2    0.000    0.000    0.000    0.000 {built-in method posix.WIFSIGNALED}
+        6    0.000    0.000    0.000    0.000 {method 'group' of 're.Match' objects}
+        4    0.000    0.000    0.000    0.000 {method 'acquire' of '_thread.lock' objects}
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/threading.py:255(_is_owned)
+        4    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/platform.py:923(uname)
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/subprocess.py:240(_cleanup)
+        1    0.000    0.000    0.000    0.000 <__array_function__ internals>:2(copyto)
+        1    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/shape_base.py:220(_vhstack_dispatcher)
+        1    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/_methods.py:50(_count_reduce_items)
+        2    0.000    0.000    0.000    0.000 {method 'rfind' of 'bytes' objects}
+        6    0.000    0.000    0.000    0.000 {method 'find' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method posix.WEXITSTATUS}
+        2    0.000    0.000    0.000    0.000 {method 'append' of 'collections.deque' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method time.time}
+        2    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.lock' objects}
+        2    0.000    0.000    0.000    0.000 {method 'fileno' of '_io.TextIOWrapper' objects}
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/codecs.py:186(__init__)
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/threading.py:243(__exit__)
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/subprocess.py:844(__enter__)
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/subprocess.py:1573(_internal_poll)
+        4    0.000    0.000    0.000    0.000 /Users/shirzart/.vscode/extensions/ms-python.python-2020.11.371526539/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydev_bundle/pydev_log.py:151(debug)
+        1    0.000    0.000    0.000    0.000 <__array_function__ internals>:2(any)
+        2    0.000    0.000    0.000    0.000 {method 'rstrip' of 'bytes' objects}
+        2    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method posix.WIFEXITED}
+        2    0.000    0.000    0.000    0.000 {method '__enter__' of '_thread.lock' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method _thread.allocate_lock}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1009(_handle_fromlist)
+        1    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/os.py:756(decode)
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/3.7.5/lib/python3.7/tempfile.py:479(func_wrapper)
+        2    0.000    0.000    0.000    0.000 /Users/shirzart/.vscode/extensions/ms-python.python-2020.11.371526539/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_net_command_factory_json.py:381(make_process_created_message)
+        1    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/multiarray.py:1043(copyto)
+        1    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/shape_base.py:79(_atleast_2d_dispatcher)
+        1    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/numpy/core/fromnumeric.py:2232(_any_dispatcher)
+        1    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
+        2    0.000    0.000    0.000    0.000 {method 'keys' of 'dict' objects}
+        2    0.000    0.000    0.000    0.000 {method 'remove' of 'collections.deque' objects}
+        1    0.000    0.000    0.000    0.000 /Users/shirzart/.pyenv/versions/iBrus/lib/python3.7/site-packages/trimesh/caching.py:580(clear)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+

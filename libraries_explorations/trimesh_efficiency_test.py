@@ -30,10 +30,6 @@ def grid_type_generation(grid_type: str, x_position: float, y_position: float,
         new_grain = trimesh.Trimesh.copy(grain_raw_mesh)
         return new_grain.apply_translation(np.array([x_position, y_position,z_position]))
             
-
-
-
-
 def getsetup(number :int, distance: int, grid_type: str):
     list_of_grain = []
 
@@ -70,33 +66,33 @@ def for_loop_trimesh(number_of_grains: int, distance: int, grid_type):
         run_time_collection.append(this_process_time)
         print(run_time_collection)
 
-    grain_numbers = [element ** 2 for element in number_of_grains]
-    plt.figure()
-    plt.plot(grain_numbers, run_time_collection,'bs')
-    plt.xlabel("number of grains/cubes in the grid")
-    plt.ylabel("run time in seconds")
-    plt.title("Trimesh Run time profiling for a square grid intersecting with a cube")
-    plt.show()
-    plt.savefig("Trimesh_grain_grid_runtime_scaling_bup.png")
+    # grain_numbers = [element ** 2 for element in number_of_grains]
+    # plt.figure()
+    # plt.plot(grain_numbers, run_time_collection,'bs')
+    # plt.xlabel("number of grains/cubes in the grid")
+    # plt.ylabel("run time in seconds")
+    # plt.title("Trimesh Run time profiling for a square grid intersecting with a cube")
+    # plt.show()
+    # plt.savefig("Trimesh_grain_grid_runtime_scaling_bup.png")
     return run_time_collection
 
 if __name__ == "__main__": 
     import cProfile
-    number = [1,2,3,4,5,6,7,8,9,10]
+    number = [5]
     distance = 4
 
-    cProfile.run('for_loop_trimesh(number, distance, "grain")', "output.dat")
+    cProfile.run('for_loop_trimesh(number, distance, "grain")', "output_trimesh.dat")
 
     import pstats
     from pstats import SortKey
 
     # Generate report sorted on the function that took most time to run it
     with open("trimesh_efficiency_test_output_time_bup.txt","w") as f:
-        p = pstats.Stats("output.dat", stream=f)
+        p = pstats.Stats("output_trimesh.dat", stream=f)
         p.sort_stats("time").print_stats()
     
     # Generate report sorted by function that is called the most number of times
 
     with open("trimesh_efficiency_test_output_call_bup.txt", "w") as f:
-        p = pstats.Stats("output.dat", stream=f)
+        p = pstats.Stats("output_trimesh.dat", stream=f)
         p.sort_stats("calls").print_stats()
