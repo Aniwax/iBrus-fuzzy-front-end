@@ -15,8 +15,8 @@ with a primitive box that sits just beneath the grid. The size of the box is dep
 
 This test was run on different number of grains([Trimesh test script](libraries_explorations/trimesh_efficiency_test.py), [Pymesh test script](libraries_explorations/Pymesh_efficiency_test.py) and the runtime scaling effect is plotted in the following 2 plots:
 
-[Trimesh_boolan operations runtime](libraries_explorations/Trimesh_grain_grid_runtime_scaling_bup.png)
-[Pymesh boolean operations runtime](libraries_explorations/pymesh_grain_grid_runtime_scaling.png)
+![Trimesh_boolan operations runtime](libraries_explorations/Trimesh_grain_grid_runtime_scaling_bup.png)
+![Pymesh boolean operations runtime](libraries_explorations/pymesh_grain_grid_runtime_scaling.png)
 
 The detailed breakdown of the runtime can be find in [Trimesh runtime breakdown](libraries_exploratoins/trimesh_efficiency_test_output_time_bup.txt) and 
 [Pymesh runtime breakdown](libraries_explorations/pymesh_efficiency_test_output_time.txt). Those files display in detail which functions consisted the most of runtime.
