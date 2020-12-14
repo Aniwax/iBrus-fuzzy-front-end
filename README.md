@@ -7,9 +7,19 @@ This repository hosts all the code examples generated while exploring different 
 3. [Pymesh](https://github.com/PyMesh/PyMesh)
 
 ## Boolean operations performance comparison
-![Trimesh_boolan operations runtime](Trimesh_grain_grid_runtime_scaling_bup.png)
-![Pymesh boolean operations runtime](pymesh_grain_grid_runtime_scaling.png)
 
+To compare the boolean operation speed of different libraries, we designed an experiement, where a sqaure grid of n * n number of grain is generated to intersect 
+with a primitive box that sits just beneath the grid. The size of the box is dependent on the size of the grid. The boolean opeartions taken place are:
+1. Calculate the union of the grid of grains
+2. Calculate the difference between the grid and the box. 
+
+This test was run on different number of grains and the runtime scaling effect is plotted in the following 2 plots:
+
+![Trimesh_boolan operations runtime](libraries_explorations/Trimesh_grain_grid_runtime_scaling_bup.png)
+![Pymesh boolean operations runtime](libraries_explorations/pymesh_grain_grid_runtime_scaling.png)
+
+The detailed breakdown of the runtime can be find in [!Trimesh runtime breakdown](libraries_exploratoins/trimesh_efficiency_test_output_time_bup.txt) and 
+[!Pymesh runtime breakdown](libraries_explorations/pymesh_efficiency_test_output_time.txt). Those files display in detail which functions consisted the most of runtime.
 
 ## Notes, Tips, tricks and helpful links to check out for different packges
 ### Pymesh
