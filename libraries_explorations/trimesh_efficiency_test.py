@@ -66,19 +66,19 @@ def for_loop_trimesh(number_of_grains: int, distance: int, grid_type):
         run_time_collection.append(this_process_time)
         print(run_time_collection)
 
-    # grain_numbers = [element ** 2 for element in number_of_grains]
-    # plt.figure()
-    # plt.plot(grain_numbers, run_time_collection,'bs')
-    # plt.xlabel("number of grains/cubes in the grid")
-    # plt.ylabel("run time in seconds")
-    # plt.title("Trimesh Run time profiling for a square grid intersecting with a cube")
-    # plt.show()
-    # plt.savefig("Trimesh_grain_grid_runtime_scaling_bup.png")
+    grain_numbers = [element ** 2 for element in number_of_grains]
+    plt.figure()
+    plt.plot(grain_numbers, run_time_collection,'bs')
+    plt.xlabel("number of grains/cubes in the grid")
+    plt.ylabel("run time in seconds")
+    plt.title("Trimesh Run time profiling for a square grid intersecting with a cube")
+    plt.show()
+    plt.savefig("Trimesh_grain_grid_runtime_scaling_bup.png")
     return run_time_collection
 
 if __name__ == "__main__": 
     import cProfile
-    number = [5]
+    number = [1,2,3,4,5,6,7,8]
     distance = 4
 
     cProfile.run('for_loop_trimesh(number, distance, "grain")', "output_trimesh.dat")
