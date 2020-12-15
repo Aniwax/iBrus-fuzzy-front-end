@@ -20,7 +20,7 @@ This repository hosts all the code examples generated while exploring different 
 | Simulation Scenario | iBrus | Pymesh | Trimesh | Vedo |
 | --- | --- | --- | --- |
 | 1 grain cut 1 plane/1 grain intersect with 1 box | 10.31 ms | 0.004 ms | 4.49 ms | 1.91 ms |
-| 25 grains cut 1 plane/25 grains difference with 1 box | 0.28 s | 4.09 s | 71 s | \- |
+| 25 grains cut 1 plane/25 grains difference with 1 box | 0.28 s | 4.09 s | 71 s | Not executable |
 
 ### Calculation detail: 
 0. Hardware environment: The above result is produced in a Macbook Pro 2017 edition with 2.3 GHz Dual-Core Intel Core i5 processor, 8 GB 2133 MHz memory.
