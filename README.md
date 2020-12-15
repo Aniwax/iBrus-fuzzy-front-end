@@ -6,7 +6,24 @@ This repository hosts all the code examples generated while exploring different 
 2. [Vedo](https://github.com/marcomusy/vedo)
 3. [Pymesh](https://github.com/PyMesh/PyMesh)
 
-## Boolean operations performance comparison
+## The criterion to compare different libraries:
+
+1. Possibility of using GPU or CPU, potentially their performance
+2. Computational efficiency
+3. Interface: if this package have a clear API or not
+4. Flexibility: what's the effort to integrate them in iBrus.
+5. Representing grains using point cloud vs meshes.
+6. Integration easiness with iBrus.
+
+## Mesh libraries compared against current iBrus implementation
+
+| Simulation Scenario | iBrus | Pymesh | Trimesh |
+| --- | --- | --- | --- |
+| 1 grain cut 1 plane/1 grain intersect with 1 box | 10 ms | 0.004 ms | 4.49 ms |
+
+| 25 grains cut 1 plane/25 grains difference with 1 box diff | 11.55 ms | 4.09 s | 71 s |
+
+## Boolean operations performance comparison between libraries
 
 To compare the boolean operation speed of different libraries, we designed an experiement, where a sqaure grid of n * n number of grain is generated to intersect 
 with a primitive box that sits just beneath the grid. The size of the box is dependent on the size of the grid. The boolean opeartions taken place are:
@@ -20,6 +37,7 @@ This test was run on different number of grains([Trimesh test script](libraries_
 
 The detailed breakdown of the runtime can be find in [Trimesh runtime breakdown](libraries_exploratoins/trimesh_efficiency_test_output_time_bup.txt) and 
 [Pymesh runtime breakdown](libraries_explorations/pymesh_efficiency_test_output_time.txt). Those files display in detail which functions consisted the most of runtime.
+
 
 ## Notes, Tips, tricks and helpful links to check out for different packges
 ### Pymesh

@@ -53,49 +53,49 @@ def getsetup(number :int, distance: int, scale: int, grid_type: str):
 def for_loop_calculation(number_of_grains: int, distance: int, scale: int, grid_type: str):
     run_time_collection = []
     for each_element in number_of_grains:
-        start_time = time.time()
         list_of_grain_dict, cube_block_dict= getsetup(each_element,distance, scale, grid_type)
+        start_time = timeit.default_timer()
         # Boolean calculation 
         CSG_grid_generation = pymesh.CSGTree({'union': list_of_grain_dict})
         CSG_entire_tree = pymesh.CSGTree({'difference': [cube_block_dict, CSG_grid_generation]})
         # residual_box_block.show() # Actually I don't need to show it. As long as calculation is done, it's fine.
-        end_time = time.time()
+        end_time = timeit.default_timer()
         this_process_time = end_time-start_time
         run_time_collection.append(this_process_time)
         print(run_time_collection)
 
-    grain_numbers = [element ** 2 for element in number_of_grains]
-    plt.figure()
-    plt.plot(grain_numbers, run_time_collection,'bs')
-    plt.xlabel("number of grains/cubes in the grid")
-    plt.ylabel("run time in seconds")
-    plt.title("Pymesh Run time profiling for a square grid intersecting with a cube")
-    plt.show()
-    plt.savefig("pymesh_runtime_scaling.png")
+    # grain_numbers = [element ** 2 for element in number_of_grains]
+    # plt.figure()
+    # plt.plot(grain_numbers, run_time_collection,'bs')
+    # plt.xlabel("number of grains/cubes in the grid")
+    # plt.ylabel("run time in seconds")
+    # plt.title("Pymesh Run time profiling for a square grid intersecting with a cube")
+    # plt.show()
+    # plt.savefig("pymesh_runtime_scaling.png")
 
 
 if __name__ == "__main__": 
     import cProfile
-    number = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+    number = [5]
     distance = 4
     scale = 1 # the size of cube
     # grain_mesh = pymesh.load_mesh("Cuboctahedron.stl")
     # runtime_list = for_loop_calculation(, distance,scale)
 
-    cProfile.run('for_loop_calculation(number, distance, scale, 5)', "output.dat")
+    cProfile.run('for_loop_calculation(number, distance, scale, "grain")', "output_pymesh_25grains.dat")
 
     import pstats
     from pstats import SortKey
 
     # Generate report sorted on the function that took most time to run it
-    with open("pymesh_efficiency_test_grain_grid_output_time.txt","w") as f:
-        p = pstats.Stats("output.dat", stream=f)
+    with open("pymesh_efficiency_test_grain_grid_output_time_25grains.txt","w") as f:
+        p = pstats.Stats("output_pymesh_25grains.dat", stream=f)
         p.sort_stats("time").print_stats()
     
     # Generate report sorted by function that is called the most number of times
 
-    with open("pymesh_efficiency_test_grain_grid_output_call.txt", "w") as f:
-        p = pstats.Stats("output.dat", stream=f)
+    with open("pymesh_efficiency_test_grain_grid_output_call_25grains.txt", "w") as f:
+        p = pstats.Stats("output_pymesh_25grains.dat", stream=f)
         p.sort_stats("calls").print_stats()
 
 

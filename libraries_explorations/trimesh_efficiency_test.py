@@ -12,7 +12,7 @@ import numpy as np
 import random
 import os
 from trimesh.base import Trimesh 
-import time 
+import timeit
 import matplotlib.pyplot as plt
 
 # This direcotry needs to be changed before running
@@ -55,44 +55,44 @@ def getsetup(number :int, distance: int, grid_type: str):
 def for_loop_trimesh(number_of_grains: int, distance: int, grid_type):
     run_time_collection = []
     for each_element in number_of_grains:
-        start_time = time.time()
         list_of_grain, Block= getsetup(each_element,distance, grid_type)
+        start_time = timeit.default_timer()
         # Boolean calculation
         union_list_of_balls = trimesh.boolean.union(list_of_grain, engine="blender")
         residual_box_block = trimesh.boolean.difference([Block, union_list_of_balls], engine="blender")
         # residual_box_block.show() # Actually I don't need to show it. As long as calculation is done, it's fine.
-        end_time = time.time()
+        end_time = timeit.default_timer()
         this_process_time = end_time-start_time
         run_time_collection.append(this_process_time)
         print(run_time_collection)
 
-    grain_numbers = [element ** 2 for element in number_of_grains]
-    plt.figure()
-    plt.plot(grain_numbers, run_time_collection,'bs')
-    plt.xlabel("number of grains/cubes in the grid")
-    plt.ylabel("run time in seconds")
-    plt.title("Trimesh Run time profiling for a square grid intersecting with a cube")
-    plt.show()
-    plt.savefig("Trimesh_grain_grid_runtime_scaling_bup.png")
+    # grain_numbers = [element ** 2 for element in number_of_grains]
+    # plt.figure()
+    # plt.plot(grain_numbers, run_time_collection,'bs')
+    # plt.xlabel("number of grains/cubes in the grid")
+    # plt.ylabel("run time in seconds")
+    # plt.title("Trimesh Run time profiling for a square grid intersecting with a cube")
+    # plt.show()
+    # plt.savefig("Trimesh_grain_grid_runtime_scaling_bup.png")
     return run_time_collection
 
 if __name__ == "__main__": 
     import cProfile
-    number = [1,2,3,4,5,6,7,8]
+    number = [5]
     distance = 4
 
-    cProfile.run('for_loop_trimesh(number, distance, "grain")', "output_trimesh.dat")
+    cProfile.run('for_loop_trimesh(number, distance, "grain")', "output_trimesh_25grains.dat")
 
     import pstats
     from pstats import SortKey
 
     # Generate report sorted on the function that took most time to run it
-    with open("trimesh_efficiency_test_output_time_bup.txt","w") as f:
-        p = pstats.Stats("output_trimesh.dat", stream=f)
+    with open("trimesh_efficiency_test_output_time_bup_25grains.txt","w") as f:
+        p = pstats.Stats("output_trimesh_25grains.dat", stream=f)
         p.sort_stats("time").print_stats()
     
     # Generate report sorted by function that is called the most number of times
 
-    with open("trimesh_efficiency_test_output_call_bup.txt", "w") as f:
-        p = pstats.Stats("output_trimesh.dat", stream=f)
+    with open("trimesh_efficiency_test_output_call_bup_25grains.txt", "w") as f:
+        p = pstats.Stats("output_trimesh_25grains.dat", stream=f)
         p.sort_stats("calls").print_stats()
