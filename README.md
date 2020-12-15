@@ -19,8 +19,8 @@ This repository hosts all the code examples generated while exploring different 
 
 | Simulation Scenario | iBrus | Pymesh | Trimesh |
 | --- | --- | --- | --- |
-| 1 grain cut 1 plane/1 grain intersect with 1 box | 10 ms | 0.004 ms | 4.49 ms |
-| 25 grains cut 1 plane/25 grains difference with 1 box | 11.55 ms | 4.09 s | 71 s |
+| 1 grain cut 1 plane/1 grain intersect with 1 box | 10.31 ms | 0.004 ms | 4.49 ms |
+| 25 grains cut 1 plane/25 grains difference with 1 box | 0.28 s | 4.09 s | 71 s |
 
 ## Boolean operations performance comparison between libraries
 
