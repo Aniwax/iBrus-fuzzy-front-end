@@ -23,6 +23,18 @@ This repository hosts all the code examples generated while exploring different 
 
 | 25 grains cut 1 plane/25 grains difference with 1 box diff | 11.55 ms | 4.09 s | 71 s |
 
+## iBrus runtime profiling
+
+Two scenarios are simulated in profiling the iBrus runtime:
+
+1. Multiple numbers of grains pass one plane.
+2. When a grain passing the workpiece, different number of planes used 
+to represent the workpiece.
+
+![Multiple grains cutting one plane](libraries_explorations/iBrus_runtime_profiling_1_plane_multiple_grains.png)
+
+![One grain cutting multiple planes](libraries_explorations/iBrus_runtime_profiling_1_grain_multiple_plane.png)
+
 ## Boolean operations performance comparison between libraries
 
 To compare the boolean operation speed of different libraries, we designed an experiement, where a sqaure grid of n * n number of grain is generated to intersect 
