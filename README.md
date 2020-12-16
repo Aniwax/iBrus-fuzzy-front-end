@@ -6,6 +6,8 @@ This repository hosts all the code examples generated while exploring different 
 2. [Vedo](https://github.com/marcomusy/vedo)
 3. [Pymesh](https://github.com/PyMesh/PyMesh)
 
+Here is an index list for mesh libraries used for scientifict programming: [Awesome list of mesh libraries](https://github.com/Aniwax/awesome-scientific-computing#meshing). But rarely do they focus on boolean operation optimization.
+
 ## The criterion to compare different libraries:
 
 1. Possibility of using GPU or CPU, potentially their performance
