@@ -9,7 +9,7 @@ Following this direction, a [pymesh test script](pymesh_resolution_benchmark.py)
 
 1. Different subdivided box meshes:
 The box mesh used in the pymesh test script is first generated as a `pymesh.Box` in the Notebook and different orders of sub-mesh is applied. When the `pymesh.Box` is generated, it has 12 faces. With each order of sub-mesh applied, the number of faces gets x4. And there is no option to only sub-mesh a certain sides of the box. So to meet the resolution of 1000 x 1000 on one face, the following equation is solved to get the desired number of orders:
-    12 x 4**n == 2 * 6 * 10**6
+    12 x 4^n == 2 * 6 * 10^6
 which result in n approximately being 10. However, the files generated at order 9 and order 10 are 157.3 MB and 629.1 MB large.
 
 2. The dimension of the cube is fixed to be suitable for 5 * 5 grid of grains. If you want to test new dimension 
