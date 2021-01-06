@@ -4,7 +4,7 @@ The problem we are facing at iBurs is to find an efficient, fast and robust way 
 
 So it's necessary to do some research and understand how things are being down in the field of solid geometry processing. 
 
-## ## Typical data structure and their application area. 
+## Typical data structure and their application area. 
 
 1. BVH: bounding volume hierarchy, which divides a 3D volume in small parts until its primitive(?). BVH is widely used in collision detection, by traversal through notes/leafs of hierarchy to extract exact notes that’s in collision with each other.
 
@@ -18,7 +18,7 @@ CSGtree is generally faster on a series of Boolean operations, compared to meshe
 
 3. Octree is another data structure that is similar to BVH. I am not sure yet if it’s exactly a variant of BVH. Octree seems widely applied in lots of optimized algorithms for speed and robust purposes: Libigl is using it, GPU-Voxel is using it as well.
 
-## ## Triangle or Voxel: which is faster 
+## Triangle or Voxel: which is faster 
 
 Since the library we explored in 2020 all used the above mentioned algorithms and library, yet they are not fast enough on the calculation we need. We start to think in other 2 directions: choice of geometry representation and choice of processing unit.
 
@@ -41,5 +41,4 @@ A similar field or technique that face similar computation problem is ray castin
 
 It’s similar calculation with boolean because when a beam of light meets the 3D geometry, depends on the light is inside or on or outside of geometry, the rendering image looks different.
 
-1. "point- in-solid test to classify required sub-meshes."
-2. Octree as a data structure to represent 3D meshes.
+
