@@ -4,7 +4,7 @@ The problem we are facing at iBurs is to find an efficient, fast and robust way 
 
 So it's necessary to do some research and understand how things are being down in the field of [solid modelling](https://en.wikipedia.org/wiki/Solid_modeling).
 
-## Typical data structure and their application area.
+## Typical data structure and their application area
 
 The most commoly used data structure in the area of solid modelling is [bounding volume hierarchy](https://en.wikipedia.org/wiki/Bounding_volume_hierarchy) and [binary space partition](https://en.wikipedia.org/wiki/Binary_space_partitioning).
 
@@ -20,13 +20,13 @@ On top of these basic principle, there is also [constructive solid geometry tree
 
 ## Triangle or Voxel: which is faster
 
-Since the library we explored in 2020 all used the above mentioned algorithms and library, yet they are not fast enough on the calculation we need. We start to think in other 2 directions: choice of geometry representation and choice of processing unit.
+Since the library we explored in 2020 all used the above mentioned algorithms and library, yet they are not fast enough on the calculation we need, as it's shown in this ![The QuickCSG performance figure](./Almost_fastest_library_on_mesh_boolean.png) and ![Comparison of Libigl against other engine](./Libigl_compare_against_others.png). We start to think in other 2 directions: choice of geometry representation and choice of processing unit.
 
-Regarding geometry representations, there are different one to choose: triangles(mesh), voxel, Dexel, point cloud, etc. But we don’t have enough understanding of pro and cons of each one.
+Regarding geometry representations, there are different one to choose: triangles(mesh), voxel, [dexel](./Dexel_Determining_the_Width_and_Depths_of_Cut_in_Milling_on_the_Basis_of_a_Multi_Dexel_Model.pdf), point cloud, etc. But we don’t have enough understanding of pro and cons of each one.
 
 The [sparse Octree voxel paper from Nvedia](./Nvedia_Efficient_Sparse_Voxel_Octrees_–_Analysis_Extensions_and_Implementation.pdf) presented discussion comparing triangles and voxels. It appears voxel takes more memory than triangle. Giving the same color, texture and normal data, voxel takes 3.33 times more memory than Triangle mesh.
 
-## GPU vs CPU 
+## GPU vs CPU
 
 GPU is largely popular in gaming community because of its powerful procedure to render image and graphic effects. GPU is also favored for its parallelization of computation.
 
@@ -41,3 +41,7 @@ The two major GPU framework to use are CUDA and OpenGL. The comparison between t
 A similar field or technique that face similar computation problem is [ray tracing](https://en.wikipedia.org/wiki/Ray_tracing_(graphics)). It’s a technique in rendering to generate better and more authentic images.
 
 It’s similar calculation with boolean because when a beam of light meets the 3D geometry, depends on the light is inside or on or outside of geometry, the rendering image looks different.
+
+## Miscellaneous
+
+Another option to power the speed of calculation is using neural network. [This paper](./Sharma_CSGNet_Neural_Shape_CVPR_2018_paper.pdf) proposed a neural net to do constructive solid geometry. But the comparison between this approach with current popular approach on mesh boolean is lacking.
