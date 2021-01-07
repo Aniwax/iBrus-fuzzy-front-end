@@ -40,9 +40,31 @@ A more comprehensive comparison is yet to be explored.
 
 ## Collision detection vs boolean operations
 
-One of the confusion in the library search or literature search is, there is apparently 2 different fields of research that are both seems relevant: [collision detection](https://en.wikipedia.org/wiki/Collision_detection) and [boolean operations](https://www.sciencedirect.com/topics/engineering/boolean-operation#:~:text=A%20Boolean%20operation%2C%20such%20as,straightforward%20and%20easy%20to%20implement.&text=It%20inherits%20the%20good%20property,Boolean%20operations%20from%20ray%2Drep.). However, these 2 fields are usually different in the data structure they use. In collision detection, BVH is widely used and applied. In boolean operations on meshes or constructive solid geometry, BSP or ![B-REP(boundary representation)](https://en.wikipedia.org/wiki/Boundary_representation) is more applied.
+<!-- One of the confusion in the library search or literature search is, there is apparently 2 different fields of research that are both seems relevant: [collision detection](https://en.wikipedia.org/wiki/Collision_detection) and [boolean operations](https://www.sciencedirect.com/topics/engineering/boolean-operation#:~:text=A%20Boolean%20operation%2C%20such%20as,straightforward%20and%20easy%20to%20implement.&text=It%20inherits%20the%20good%20property,Boolean%20operations%20from%20ray%2Drep.). However, these 2 fields are usually different in the data structure they use. In collision detection, BVH is widely used and applied. In boolean operations on meshes or constructive solid geometry, BSP or ![B-REP(boundary representation)](https://en.wikipedia.org/wiki/Boundary_representation) is more applied.
 
-These two fields points to different optimization algorithms. At the moment, we have been focusing on boolean operation perspective.
+These two fields points to different optimization algorithms. At the moment, we have been focusing on boolean operation perspective. -->
+
+Collision detection has been an heavily research area for several decades. Typical collision detection is performed in the following steps:
+
+1. Broad phase: fast test enumerates all pairs of potentially colliding objects (the so-called potentially collision set (PCS)) to be checked for exact intersection in a second step.
+2. Narrow phase: determine exact collision checks between the pairs that intersect. The narrow phase can be further divided into 2 steps: 1) non-overlapping parts of the objects are culled. 2) n accurate collision detection is performed between pairs of geometric primitives that are not culled in the first phase.
+
+Typically different data structures are used in different phases, for each phases, different methods leads to different data structure. 
+
+In the Broad phase, there is topological method and spatial partitioning method:
+
+1. In spatial partitioning method: the most commonly used structures are: BSPtree, Octree, K-d tree, regular grids, hash table,hierarchical spatial hash tables
+2. In topological method: the most famous method is Sweep and Prune. They have other data structure used with this method.
+
+In the narrow phase, the most commonly used data structure is BVH. There are also criteria for constructing an optimal BVH and cost functions to compare the efficiency of BVH constructions.
+
+Boolean operation is just part of the narrow phase, when the exact intersection need to be determined and the shape of the object need to be updated.
+
+From the object point of view, the collision detection can be separated for "rigid body" and "deformable object", where the shape of rigid body wouldn't change, while deformable object's shape can be changed during a collision. For example, a piece of cloth colliding with a ball, the ball will be rigid body and the cloth will be deformable object.
+
+There is also various effort on parallizing the computation of collision detection on GPUs. There are several articles collected point to this direction.
+
+The above summary in this section comes from [this book](./Weller2013_Chapter_ABriefOverviewOfCollisionDetec.pdf). Also, another great reference is [this book](./Real_Time_Collision_Detection_by_Christer_Ericson.pdf)
 
 ## Related topic to Boolean operation on solid geometry
 
