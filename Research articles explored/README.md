@@ -30,11 +30,19 @@ The [sparse Octree voxel paper from Nvedia](./Nvedia_Efficient_Sparse_Voxel_Octr
 
 GPU is largely popular in gaming community because of its powerful procedure to render image and graphic effects. GPU is also favored for its parallelization of computation.
 
-The two major GPU framework to use are CUDA and OpenGL. The comparison between these two is not explored yet. However, in this master thesis, the limitation of GPU is pointed out:
+The two major GPU framework to use are CUDA and OpenGL. The comparison between these two is not explored yet. However, [in this master thesis](./Parallelization_of_BVH_and_BSP_on_the_GPU.pdf), the limitation of GPU is pointed out:
 
 1. GPU cannot dynamically allocate memory, so before the calculation the memory space needed for storing the geometry should be predefined.
 2. GPU is prone to slow and discontinuous read and write.
 3. Memory, in this case, memory of OpenCL GPU, is limited.
+
+A more comprehensive comparison is yet to be explored.
+
+## Collision detection vs boolean operations
+
+One of the confusion in the library search or literature search is, there is apparently 2 different fields of research that are both seems relevant: [collision detection](https://en.wikipedia.org/wiki/Collision_detection) and [boolean operations](https://www.sciencedirect.com/topics/engineering/boolean-operation#:~:text=A%20Boolean%20operation%2C%20such%20as,straightforward%20and%20easy%20to%20implement.&text=It%20inherits%20the%20good%20property,Boolean%20operations%20from%20ray%2Drep.). However, these 2 fields are usually different in the data structure they use. In collision detection, BVH is widely used and applied. In boolean operations on meshes or constructive solid geometry, BSP or ![B-REP(boundary representation)](https://en.wikipedia.org/wiki/Boundary_representation) is more applied.
+
+These two fields points to different optimization algorithms. At the moment, we have been focusing on boolean operation perspective.
 
 ## Related topic to Boolean operation on solid geometry
 
