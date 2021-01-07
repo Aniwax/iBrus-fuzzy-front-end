@@ -66,8 +66,8 @@ There is also various effort on parallizing the computation of collision detecti
 
 The above summary in this section comes from [this book](./Weller2013_Chapter_ABriefOverviewOfCollisionDetec.pdf). Also, another great reference is [this book](./Real_Time_Collision_Detection_by_Christer_Ericson.pdf)
 
-A hard truth that we need to accept is:
-> A perfect geometric data structure would be one  that can process every imaginable geometric search query optimally. Unfortunately, such a data structure does not—and maybe cannot—exist. Quite to the contrary, much research is concerned with finding optimal data structures for each small sub-problem.
+**A hard truth that we need to accept is**:
+> A perfect geometric data structure would be one  that can process every imaginable geometric search query optimally. Unfortunately, such a data structure does not—and maybe cannot—exist. Quite to the contrary, much research is concerned with finding optimal data structures for each small sub-problem. --[this book](./Weller2013_Chapter_ABriefOverviewOfCollisionDetec.pdf)
 
 ## Related topic to Boolean operation on solid geometry
 
