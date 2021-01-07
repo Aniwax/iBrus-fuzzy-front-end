@@ -14,9 +14,9 @@ The most commoly used data structure in the area of solid modelling is [bouding 
 
 On top of these basic principle, there is also [constructive solid geometry tree (CSGtree)](https://en.wikipedia.org/wiki/Constructive_solid_geometry) and K dimensional tree, the most widely used one is [Octree](https://en.wikipedia.org/wiki/Octree)
 
-1. CSGtree: constructive soils geometry is widely used in CAD programming to construct complicated geometry shape by doing several Boolean operations with primitive shape. It’s optimized for generating complex shape while doing lots of Boolean operations, an example literature in this is: [QuickCSG tree](QuickCSG- Fast Arbitrary Boolean Combinations of N Solids.pdf). CSGtree is generally faster on a series of Boolean operations, compared to meshes. There is also a field focusing on generating CSGtree from 3D meshes called inverse CSGtree. [MIT has a paper on this topic](InverseCSG- Automatic Conversion of 3D Models to CSG Trees.pdf).
+1. CSGtree: constructive soils geometry is widely used in CAD programming to construct complicated geometry shape by doing several Boolean operations with primitive shape. It’s optimized for generating complex shape while doing lots of Boolean operations, an example literature in this is: [QuickCSG tree](./QuickCSG- Fast Arbitrary Boolean Combinations of N Solids.pdf). CSGtree is generally faster on a series of Boolean operations, compared to meshes. There is also a field focusing on generating CSGtree from 3D meshes called inverse CSGtree. [MIT has a paper on this topic](./InverseCSG- Automatic Conversion of 3D Models to CSG Trees.pdf).
 
-2. Octree is the most widely used k-dimensional tree structure in the most recent literature. It always subdivides a volume into 8 partition, recursively. Octree seems widely applied in lots of optimized algorithms for speed and robust purposes: [Libigl](Libigl-Mesh Arrangements for Solid Geometry.pdf) is using it, [GPU-Voxel](Unified GPU Voxel Collision Detection for Mobile Manipulation Planning.pdf) is using it as well.
+2. Octree is the most widely used k-dimensional tree structure in the most recent literature. It always subdivides a volume into 8 partition, recursively. Octree seems widely applied in lots of optimized algorithms for speed and robust purposes: [Libigl](./Libigl-Mesh Arrangements for Solid Geometry.pdf) is using it, [GPU-Voxel](./Unified GPU Voxel Collision Detection for Mobile Manipulation Planning.pdf) is using it as well.
 
 ## Triangle or Voxel: which is faster 
 
@@ -24,7 +24,7 @@ Since the library we explored in 2020 all used the above mentioned algorithms an
 
 Regarding geometry representations, there are different one to choose: triangles(mesh), voxel, Dexel, point cloud, etc. But we don’t have enough understanding of pro and cons of each one. 
 
-The [sparse Octree voxel paper from Nvedia](Nvedia-Efficient Sparse Voxel Octrees – Analysis, Extensions, and Implementation.pdf) presented discussion comparing triangles and voxels. It appears voxel takes more memory than triangle. Giving the same color, texture and normal data, voxel takes 3.33 times more memory than Triangel mesh. 
+The [sparse Octree voxel paper from Nvedia](./Nvedia-Efficient Sparse Voxel Octrees – Analysis, Extensions, and Implementation.pdf) presented discussion comparing triangles and voxels. It appears voxel takes more memory than triangle. Giving the same color, texture and normal data, voxel takes 3.33 times more memory than Triangel mesh. 
 
 ## GPU vs CPU 
 
